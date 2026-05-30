@@ -40,3 +40,7 @@ else {
         Start-Process $Path -ArgumentList ('-NoExit', '-NoProfile', '-EncodedCommand', [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($strScriptBlock)))
     }
 }
+#. ./build/Launch-PSModule.ps1 -ModuleManifestPath './src/*.psd1' -NoNewWindow
+# Connect-AADAssessment -ClientId "a34171da-b69f-42b7-bc1c-e07507a74174" -TenantId "bbe6a94b-d23b-42c4-b138-c00c3d953765"
+# Invoke-AADAssessmentDataCollection /Users/gayan/dev/oneIAM/Entra-Assessment/invoke-aadassessment-data-collection/ 
+# Complete-AADAssessmentReports  -Path /Users/gayan/dev/oneIAM/Entra-Assessment/invoke-aadassessment-data-collection/AzureADAssessmentData-6s41br.onmicrosoft.com.aad -OutputDirectory /Users/gayan/dev/oneIAM/Entra-Assessment/final-output-directory
